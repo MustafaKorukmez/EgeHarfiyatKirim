@@ -86,3 +86,32 @@ function fadeInOnScroll() {
 }
 window.addEventListener('scroll', fadeInOnScroll);
 window.addEventListener('DOMContentLoaded', fadeInOnScroll);
+
+// Search overlay functionality
+const searchToggle = document.querySelector('.search-toggle');
+const searchOverlay = document.getElementById('search-overlay');
+const searchForm = document.getElementById('search-form');
+const searchInput = document.getElementById('search-input');
+const searchClose = document.querySelector('.search-close');
+
+function openSearch() {
+  searchOverlay.hidden = false;
+  searchInput.focus();
+}
+function closeSearch() {
+  searchOverlay.hidden = true;
+}
+if (searchToggle && searchOverlay) {
+  searchToggle.addEventListener('click', openSearch);
+  searchClose.addEventListener('click', closeSearch);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSearch(); });
+  searchForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const q = searchInput.value.trim();
+    if (q) {
+      if (!window.find(q)) {
+        alert('Sonuç bulunamadı');
+      }
+    }
+  });
+}
