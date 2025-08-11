@@ -139,7 +139,9 @@ nav {
 .service-card .icon {
   margin-bottom: 1.1rem; width: 56px; height: 56px;
   background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center;
-  /* Placeholder for icon SVGs below */
+}
+.service-card .icon img {
+  width: 54%; height: 54%; object-fit: contain;
 }
 .service-card h3 {
   font-size: 1.23rem; margin: .2rem 0 .8rem 0; font-weight: 700; color: var(--text);
@@ -148,18 +150,6 @@ nav {
   color: #444b; font-size: 1rem; margin: 0;
 }
 
-/* Example SVG icons for demonstration. You should replace the background with inline SVGs in HTML for best SEO and accessibility */
-.service-wall      { background: var(--accent) url('icons/wall.svg')   center/54% no-repeat; }
-.service-debris    { background: var(--accent) url('icons/debris.svg') center/54% no-repeat; }
-.service-bathroom  { background: var(--accent) url('icons/bath.svg')   center/54% no-repeat; }
-.service-kitchen   { background: var(--accent) url('icons/kitchen.svg')center/54% no-repeat; }
-.service-screed    { background: var(--accent) url('icons/screed.svg') center/54% no-repeat; }
-.service-roof      { background: var(--accent) url('icons/roof.svg')   center/54% no-repeat; }
-.service-pool      { background: var(--accent) url('icons/pool.svg')   center/54% no-repeat; }
-.service-building  { background: var(--accent) url('icons/building.svg')center/54% no-repeat; }
-.service-concrete  { background: var(--accent) url('icons/concrete.svg')center/54% no-repeat; }
-.service-core      { background: var(--accent) url('icons/core.svg')   center/54% no-repeat; }
-.service-excavator { background: var(--accent) url('icons/excavator.svg')center/54% no-repeat; }
 
 /* Projects & Gallery */
 .projects {
