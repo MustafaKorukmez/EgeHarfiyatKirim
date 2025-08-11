@@ -143,6 +143,9 @@ nav {
 .service-card .icon img {
   width: 54%; height: 54%; object-fit: contain;
 }
+.service-card .icon i {
+  color: #fff; font-size: 28px;
+}
 .service-card h3 {
   font-size: 1.23rem; margin: .2rem 0 .8rem 0; font-weight: 700; color: var(--text);
 }
