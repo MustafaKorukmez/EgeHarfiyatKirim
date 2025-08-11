@@ -236,6 +236,11 @@ blockquote { color: #222; font-style: italic; margin: 0 0 1rem 0; }
   width: 34px; height: 34px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center;
   /* SVG icons would be inline for accessibility */
 }
+.advantages-list .icon img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
 
 /* Blog Preview */
 .blog {
